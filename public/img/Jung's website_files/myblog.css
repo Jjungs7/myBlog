@@ -1,0 +1,31 @@
+#menu {
+	background: 0 0;
+	background-size: cover;
+}
+
+.masterheader {
+	background-image: url('../img/cafe-image.jpg');
+	position: relative;
+	padding-top: 130px;
+	padding-bottom: 200px;
+	margin-bottom: 50px;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: .5;
+}
+
+.site-heading {
+	text-align: center;
+	color: #fff;
+}
+
+.subheading {
+	padding-left: 12px;
+}

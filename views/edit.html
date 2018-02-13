@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Jjung's website</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/myblog.css">
+	
+</head>
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="menu">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="/">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="/about">About me</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masterheader">
+    <div class="overlay"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1 class="display-2">Jjung's blog</h1>
+            <span class="subheading">양정일의 블로그에 오신 것을 환영합니다!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <div class="container">
+    <form action="/add" method="post">
+      <div class="form-group">
+        <label for="title">제목</label>
+        <input type="text" name="title" class="form-control" value="<%= post.title %>">
+      </div>
+      <div class="form-group">
+        <label for="content">내용</label>
+        <textarea class="form-control" rows="20" name="content"><%= post.content %></textarea>
+      </div>
+      <div class="form-group">
+        <label for="ref">참고문헌 또는 출처</label>
+        <textarea class="form-control" rows="4" name="ref"><%= post.reference %></textarea>
+      </div>
+      <div class="form-group">
+        <label for="ref">태그</label>
+        <input type="text" name="tags" class="form-control" value="<%= post.tags %>">
+      </div>
+      <button type="submit" class="btn btn-dark">작성</button>
+      <a href="/" class="btn btn-dark bg-secondary text-white">취소</a>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <!-- javascript for this site -->
+  <script src="js/blog.js"></script>
+</body>
+</html>

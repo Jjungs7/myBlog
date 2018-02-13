@@ -1,0 +1,121 @@
+#menu {
+	background: 0 0;
+	background-size: cover;
+	padding: 5px, 10px;
+}
+
+#menu.is-fixed {
+	position: fixed;
+	top: -67px;
+	background-color: rgba(255, 255, 255, .85);
+	transition: transform .2s;
+}
+
+#menu.is-visible {
+    transform: translate3d(0, 100%, 0);
+}
+
+#menu.is-fixed .navbar-nav>a {
+	color: #212529;
+}
+
+#menu .navbar-nav>a {
+	padding: 10px 15px;
+}
+
+.masterheader {
+	background-image: url('../img/cafe-image.jpg');
+	position: relative;
+	padding-top: 150px;
+	height: 500px;
+	margin-bottom: 50px;
+}
+
+#postheader {
+	height: 650px;
+	padding-top: 200px;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: .5;
+}
+
+.site-heading {
+	text-align: center;
+	color: #fff;
+}
+
+.site-heading .display-2 {
+	font-family: 'Chivo', sans-serif;
+}
+
+.subheading {
+	padding-left: 12px;
+}
+
+#contents {
+	height: 700px;
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+#posts .post-preview>a:hover {
+	color: #2B7A78;
+	text-decoration: none;
+}
+
+.post-title {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: 800;
+}
+
+.post-preview>a {
+	color: #212529;
+}
+
+#more-button {
+	color: #fff;
+	background-color: #7395AE;
+	border-color: #7395AE;
+}
+
+footer {
+	padding: 20px 0 30px;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 3rem;
+}
+
+#res-contents {
+	margin-top: 35px;
+}
+
+.text-muted {
+	padding-left: 10px;
+}
+
+.fa {
+	font-size: 18px;
+}
+
+/* text decoration */
+p a {
+	text-decoration: underline;
+}
+
+li small {
+	padding-left: 5px;
+	color: grey;
+}
+
+#contents p {
+	font-size: 24px;
+}
