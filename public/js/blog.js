@@ -29,3 +29,7 @@
 	      });
 	  }
 })(jQuery);
+
+    $("#parag").on("click", function() { document.getElementById('cont').value += '<p></p>'; });
+    $("#blockq").on("click", function() { document.getElementById('cont').value += '<div class="jumbotron" id="block"></div>'; });
+    $("#sect").on("click", function() { document.getElementById('cont').value += '<h2 class="section-heading"></h2>'; });
